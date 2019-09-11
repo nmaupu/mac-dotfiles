@@ -1,0 +1,284 @@
+{
+  "title": "Custom US intl",
+  "rules": [
+
+    {
+      "description": "é no deadkey",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote"
+            },
+            {
+              "key_code": "e"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "Linux style ç (right_alt + ,)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "c",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "Linux style Ç (right_alt + shift + ,)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_alt",
+				"shift"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "c",
+              "modifiers": [
+                "right_alt",
+				"shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "Linux style œ (right_alt + k)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "q",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "Linux style Œ (right_alt + shift + k)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_alt",
+				"shift"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "q",
+              "modifiers": [
+                "right_alt",
+				"shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "\" no deadkey",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "quote",
+              "modifiers": [
+                "shift"
+              ]
+            },
+			{
+			  "key_code": "right_arrow"
+			}
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "' no deadkey",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "quote"
+          },
+          "to": [
+			{
+              "key_code": "quote"
+            },
+			{
+			  "key_code": "right_arrow"
+			}
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "` no deadkey (for deadkey, use right_alt + `)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "grave_accent_and_tilde"
+		  },
+          "to": [
+			{
+              "key_code": "grave_accent_and_tilde"
+            },
+			{
+			  "key_code": "spacebar"
+			}
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "~ no deadkey",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "grave_accent_and_tilde",
+			"modifiers": {
+				"mandatory": [
+					"shift"
+				]
+			}
+          },
+          "to": [
+			{
+              "key_code": "grave_accent_and_tilde",
+			  "modifiers": [
+				  "shift"
+			  ]
+            },
+			{
+			  "key_code": "spacebar"
+			}
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "^ no deadkey",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "6",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "6",
+              "modifiers": [
+                "shift"
+              ]
+            },
+			{
+				"key_code": "spacebar"
+			}
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "^ deadkey (right_alt + 6)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "6",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+			{
+              "key_code": "6",
+              "modifiers": [
+                "shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
