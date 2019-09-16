@@ -9,6 +9,7 @@ brew install ansible \
              antigen \
 			 coreutils \
 			 derailed/k9s/k9s \
+			 faas-cli \
 			 fzf \
 			 git \
 			 goku \
@@ -41,3 +42,7 @@ cp ${DIRNAME}/vimrc ${HOME}/.vimrc
 mkdir -p ${HOME}/.config/nvim
 ln -sf ${HOME}/.vimrc ${HOME}/.config/nvim/init.vim
 nvim +PluginInstall +GoInstallBinaries +qall >/dev/null
+
+# Iterm2
+# Installing shell integrations
+curl -L https://iterm2.com/misc/install_shell_integration.sh | bash

@@ -188,11 +188,12 @@ fi
 
 # Trying to fix problem with autocompletion commands
 # https://github.com/zsh-users/antigen/issues/583#issuecomment-336903466
-source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/kubectl/kubectl.plugin.zsh
+# source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/kubectl/kubectl.plugin.zsh
 
 # Iterm2 integration related functions
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 function iterm2_print_user_vars () {
   KUBECONTEXT=$(CTX=$(kubectl config current-context) 2> /dev/null;if [ $? -eq 0 ]; then echo "\u2638 $CTX";fi)
-  iterm2_set_user_var kubeContext $KUBECONTEXT
+  KUBENAMESPACE=$(NS=$(kubectl config view --minify -o=jsonpath={..namespace}) 2> /dev/null; if [ $? -eq 0 ]; then echo "$NS"; fi)
+  iterm2_set_user_var kubeContext "$KUBECONTEXT ($KUBENAMESPACE)"
 }
