@@ -15,6 +15,8 @@ brew install ansible \
 			 goku \
 			 jq \
 			 neovim \
+			 stern \
+			 telnet \
 			 terraform \
 			 vault \
 			 yqrashawn/goku/goku
