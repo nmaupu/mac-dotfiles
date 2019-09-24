@@ -158,7 +158,7 @@ kns() {
   if [ "$1" = '-' ]; then
     new_ns = '-'
   else
-    new_ns=$(kubectl get ns | awk 'NR>2{print $1}'| fzf -0 -1 --tac)
+    new_ns=$(kubectl get ns -o json | jq -r '.items[].metadata.name' | fzf -0 -1 --tac)
   fi
 
   kubectl config set-context $(kubectl config current-context) --namespace="${new_ns}"
