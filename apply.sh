@@ -18,6 +18,7 @@ brew install ansible \
 			 stern \
 			 telnet \
 			 terraform \
+			 tig \
 			 vault \
 			 yqrashawn/goku/goku
 services start yqrashawn/goku/goku
