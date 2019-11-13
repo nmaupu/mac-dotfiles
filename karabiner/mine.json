@@ -40,7 +40,7 @@
             }
           },
           "to": [
-			{
+            {
               "key_code": "c",
               "modifiers": [
                 "right_alt"
@@ -61,16 +61,16 @@
             "modifiers": {
               "mandatory": [
                 "right_alt",
-				"shift"
+                "shift"
               ]
             }
           },
           "to": [
-			{
+            {
               "key_code": "c",
               "modifiers": [
                 "right_alt",
-				"shift"
+                "shift"
               ]
             }
           ],
@@ -92,7 +92,7 @@
             }
           },
           "to": [
-			{
+            {
               "key_code": "q",
               "modifiers": [
                 "right_alt"
@@ -113,16 +113,16 @@
             "modifiers": {
               "mandatory": [
                 "right_alt",
-				"shift"
+                "shift"
               ]
             }
           },
           "to": [
-			{
+            {
               "key_code": "q",
               "modifiers": [
                 "right_alt",
-				"shift"
+                "shift"
               ]
             }
           ],
@@ -144,15 +144,15 @@
             }
           },
           "to": [
-			{
+            {
               "key_code": "quote",
               "modifiers": [
                 "shift"
               ]
             },
-			{
-			  "key_code": "spacebar"
-			}
+            {
+              "key_code": "spacebar"
+            }
           ],
           "type": "basic"
         }
@@ -167,12 +167,12 @@
             "key_code": "quote"
           },
           "to": [
-			{
+            {
               "key_code": "quote"
             },
-			{
-			  "key_code": "spacebar"
-			}
+            {
+              "key_code": "spacebar"
+            }
           ],
           "type": "basic"
         }
@@ -185,14 +185,14 @@
         {
           "from": {
             "key_code": "grave_accent_and_tilde"
-		  },
+          },
           "to": [
-			{
+            {
               "key_code": "grave_accent_and_tilde"
             },
-			{
-			  "key_code": "spacebar"
-			}
+            {
+              "key_code": "spacebar"
+            }
           ],
           "type": "basic"
         }
@@ -205,22 +205,22 @@
         {
           "from": {
             "key_code": "grave_accent_and_tilde",
-			"modifiers": {
-				"mandatory": [
-					"shift"
-				]
-			}
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
           },
           "to": [
-			{
+            {
               "key_code": "grave_accent_and_tilde",
-			  "modifiers": [
-				  "shift"
-			  ]
+              "modifiers": [
+                "shift"
+              ]
             },
-			{
-			  "key_code": "spacebar"
-			}
+            {
+              "key_code": "spacebar"
+            }
           ],
           "type": "basic"
         }
@@ -240,15 +240,15 @@
             }
           },
           "to": [
-			{
+            {
               "key_code": "6",
               "modifiers": [
                 "shift"
               ]
             },
-			{
-				"key_code": "spacebar"
-			}
+            {
+              "key_code": "spacebar"
+            }
           ],
           "type": "basic"
         }
@@ -268,7 +268,7 @@
             }
           },
           "to": [
-			{
+            {
               "key_code": "6",
               "modifiers": [
                 "shift"
@@ -293,7 +293,7 @@
             }
           },
           "to": [
-			{
+            {
               "key_code": "grave_accent_and_tilde"
             }
           ],
@@ -310,12 +310,12 @@
             "key_code": "non_us_backslash"
           },
           "to": [
-			{
+            {
               "key_code": "grave_accent_and_tilde"
             },
-			{
-			  "key_code": "spacebar"
-			}
+            {
+              "key_code": "spacebar"
+            }
           ],
           "type": "basic"
         }
