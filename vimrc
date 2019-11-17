@@ -29,6 +29,16 @@ Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 filetype plugin indent on
+" Configuration for YAML file type - correct indentation, spaces instead of
+" tabs, etc.
+augroup filetype_yaml
+    autocmd!
+    autocmd BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+    autocmd FileType yaml |
+        setlocal shiftwidth=2 |
+        setlocal softtabstop=2 |
+        setlocal tabstop=2
+augroup END
 set omnifunc=syntaxcomplete#Complete
 set completeopt=longest,menuone
 
