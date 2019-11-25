@@ -273,3 +273,6 @@ set shiftwidth=4
 
 " Display the current line we are in
 set cursorline
+
+" Prevent having a delay when pressing escape
+set timeoutlen=1000 ttimeoutlen=0

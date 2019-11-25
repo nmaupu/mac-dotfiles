@@ -197,3 +197,6 @@ function iterm2_print_user_vars () {
   KUBENAMESPACE=$(NS=$(kubectl config view --minify -o=jsonpath={..namespace}) 2> /dev/null; if [ $? -eq 0 ]; then echo "$NS"; fi)
   iterm2_set_user_var kubeContext "$KUBECONTEXT ($KUBENAMESPACE)"
 }
+
+# added by travis gem
+[ -f /Users/nicolas_maupu/.travis/travis.sh ] && source /Users/nicolas_maupu/.travis/travis.sh
