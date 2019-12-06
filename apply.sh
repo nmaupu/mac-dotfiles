@@ -7,20 +7,22 @@ DIRNAME=$(realpath $(dirname $0))
 # and some packages
 brew install ansible \
              antigen \
-			 coreutils \
-			 derailed/k9s/k9s \
-			 faas-cli \
-			 fzf \
-			 git \
-			 goku \
-			 jq \
-			 neovim \
-			 stern \
-			 telnet \
-			 terraform \
-			 tig \
-			 vault \
-			 yqrashawn/goku/goku
+             coreutils \
+             derailed/k9s/k9s \
+             faas-cli \
+             fzf \
+             git \
+             goku \
+             jq \
+             neovim \
+             stern \
+             telnet \
+             terraform \
+             tig \
+             vault \
+             yqrashawn/goku/goku \
+             zlib \
+             sqlite
 services start yqrashawn/goku/goku
 
 
@@ -32,7 +34,7 @@ if [ -e /Applications/Karabiner-Elements.app ]; then
     ln -sf ${DIRNAME}/karabiner/${file} ${HOME}/.config/karabiner/assets/complex_modifications/${file}
   done
 else
-	echo "Karabiner is not install, download and install it from https://pqrs.org/osx/karabiner"
+  echo "Karabiner is not install, download and install it from https://pqrs.org/osx/karabiner"
 fi
 
 # zsh
