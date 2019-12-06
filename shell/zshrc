@@ -5,7 +5,7 @@
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 #POWERLEVEL9K_MODE="awesome-patched"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir_writable dir rbenv vcs)
-POWERLEVEL9K_RIGHT_ROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_RIGHT_ROMPT_ELEMENTS=(status root_indicator background_jobs history time virtualenv)
 
 export DEFAULT_USER=nmaupu
 
@@ -75,21 +75,22 @@ fi
 source "${HOME}/.antigen.zsh"
 
 antigen use oh-my-zsh
-antigen bundle kubectl
-antigen bundle helm
+antigen bundle common-aliases
+antigen bundle djui/alias-tips
 antigen bundle docker
 antigen bundle fabric
 antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
+antigen bundle helm
+antigen bundle kubectl
 antigen bundle pip
-antigen bundle common-aliases
-antigen bundle djui/alias-tips
 antigen bundle sudo
 antigen bundle vagrant
+antigen bundle virtualenv
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme  bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
 ###############################
