@@ -267,9 +267,9 @@ let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.swo,*.zip
 
 " Indentation
-set tabstop=4
-set softtabstop=0 noexpandtab
-set shiftwidth=4
+set tabstop=2
+set softtabstop=0 expandtab
+set shiftwidth=2
 
 " Display the current line we are in
 set cursorline
