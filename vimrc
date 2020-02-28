@@ -276,3 +276,6 @@ set cursorline
 
 " Prevent having a delay when pressing escape
 set timeoutlen=1000 ttimeoutlen=0
+
+" Autocomplete also use '-' char
+set iskeyword+=\-
