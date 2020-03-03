@@ -1,0 +1,13 @@
+trailing_spaces() {
+  file "$@" | awk -F': ' '$2~/text/{print $1}' | while read f; do
+    dos2unix -q "$f"
+    if [ -n "${f##*.md}" ]; then
+      awk '{sub(/[ \t]*$/,"",$0);print}' <"$f" >"$f.$$"
+    else
+      awk 1 <"$f" >"$f.$$"
+    fi
+    chmod --reference="$f" "$f.$$"
+    chown --reference="$f" "$f.$$"
+    mv "$f.$$" "$f"
+  done
+}

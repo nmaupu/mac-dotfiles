@@ -3,7 +3,7 @@
 DIRNAME=$(realpath $(dirname $0))
 
 # installing brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 # and some packages
 brew install ansible \
              antigen \
@@ -40,6 +40,9 @@ fi
 # zsh
 echo "Applying zsh configuation..."
 ln -sf ${DIRNAME}/shell/zshrc ${HOME}/.zshrc
+# zsh.d
+mkdir -p ~/zshrc.d
+ln -sf ${DIRNAME}/shell/zshrc.d/trailing_spaces ~/.zshrc.d/trailing_spaces
 
 # neovim
 echo "Applying neovim configuration..."
