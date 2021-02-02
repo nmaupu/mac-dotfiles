@@ -42,7 +42,7 @@ echo "Applying zsh configuation..."
 ln -sf ${DIRNAME}/shell/zshrc ${HOME}/.zshrc
 # zsh.d
 mkdir -p ~/zshrc.d
-ln -sf ${DIRNAME}/shell/zshrc.d/trailing_spaces ~/.zshrc.d/trailing_spaces
+cp ${DIRNAME}/shell/zshrc.d/trailing_spaces ~/.zshrc.d/trailing_spaces
 
 # neovim
 echo "Applying neovim configuration..."

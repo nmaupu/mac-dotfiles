@@ -1,4 +1,4 @@
-trailing_spaces() {
+function trailing_spaces {
   file "$@" | awk -F': ' '$2~/text/{print $1}' | while read f; do
     dos2unix -q "$f"
     if [ -n "${f##*.md}" ]; then
