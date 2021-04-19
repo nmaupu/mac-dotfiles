@@ -10,8 +10,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'lifepillar/vim-solarized8'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'MicahElliott/Rocannon'
@@ -238,6 +238,12 @@ map <silent> <C-l> <ESC>t :set relativenumber!<CR>:set number!<CR>
 " Using <C-B> instead
 map <C-B> :!make<CR>
 
+" Remap netrw vim file explorer commands (instead of nerdtree)
+nnoremap <C-n>   :edit.<CR>
+nnoremap <C-S-n> :Explore<CR>
+nnoremap <C-h> :split<CR>
+nnoremap <C-v> :vsplit<CR>
+
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -246,16 +252,18 @@ inoremap <expr> <C-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " autocmd vimenter * NERDTree
-map <C-N> :NERDTreeToggle<CR>
-let g:NERDTreeDirArrows = 1
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+"map <C-N> :NERDTreeToggle<CR>
+"let g:NERDTreeDirArrows = 1
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
+"let NERDTreeHijackNetrw=1
 
-" Remap key bindings for resizing NERDTree pane
+" Remap key bindings for resizing panes
 nnoremap <C-S-Down>  <C-w>+
 nnoremap <C-S-Up>    <C-w>-
 nnoremap <C-S-Left>  <C-w><
 nnoremap <C-S-Right> <C-w>>
+
 
 " Airline stuff
 " https://github.com/vim-airline/vim-airline
