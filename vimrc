@@ -251,6 +251,12 @@ let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
+" Remap key bindings for resizing NERDTree pane
+nnoremap <C-S-Down>  <C-w>+
+nnoremap <C-S-Up>    <C-w>-
+nnoremap <C-S-Left>  <C-w><
+nnoremap <C-S-Right> <C-w>>
+
 " Airline stuff
 " https://github.com/vim-airline/vim-airline
 let g:airline_theme='base16'
