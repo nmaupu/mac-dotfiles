@@ -49,7 +49,7 @@ echo "Applying neovim configuration..."
 cp ${DIRNAME}/vimrc ${HOME}/.vimrc
 mkdir -p ${HOME}/.config/nvim
 ln -sf ${HOME}/.vimrc ${HOME}/.config/nvim/init.vim
-nvim +PluginInstall +GoInstallBinaries +qall >/dev/null
+vim +PluginInstall +GoInstallBinaries +qall >/dev/null
 
 # Iterm2
 # Installing shell integrations
