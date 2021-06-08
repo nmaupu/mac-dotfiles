@@ -142,6 +142,7 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark
+;set background=light
 colorscheme solarized8
 
 set relativenumber
@@ -207,13 +208,13 @@ nmap <silent> <C-Left>  <ESC>:wincmd h<CR>
 nmap <silent> <C-Right> <ESC>:wincmd l<CR>
 
 " Tabs handling - all modes
-map  <silent> <C-S-Right> <ESC>:tabnext<CR>
-map  <silent> <C-S-Left>  <ESC>:tabprevious<CR>
-map  <silent> <C-T>       <ESC>:tabnew<CR>
+"map  <silent> <C-S-Right> <ESC>:tabnext<CR>
+"map  <silent> <C-S-Left>  <ESC>:tabprevious<CR>
+"map  <silent> <C-T>       <ESC>:tabnew<CR>
 " map  <silent> <C-S-W>     <ESC>:tabclose<CR>
-map! <silent> <C-S-Right> <ESC>:tabnext<CR>
-map! <silent> <C-S-Left>  <ESC>:tabprevious<CR>
-map! <silent> <C-T>       <ESC>:tabnew<CR>
+"map! <silent> <C-S-Right> <ESC>:tabnext<CR>
+"map! <silent> <C-S-Left>  <ESC>:tabprevious<CR>
+"map! <silent> <C-T>       <ESC>:tabnew<CR>
 " map! <silent> <C-S-W>     <ESC>:tabclose<CR>
 
 " Spell check
@@ -236,13 +237,15 @@ map <silent> <C-l> <ESC>t :set relativenumber!<CR>:set number!<CR>
 " Cannot use <C-M> as it will also be mapped as <CR> :(
 " So when pressing enter, that launch make command.
 " Using <C-B> instead
-map <C-B> :!make<CR>
+"map <C-B> :!make<CR>
 
 " Remap netrw vim file explorer commands (instead of nerdtree)
-nnoremap <C-n>   :edit.<CR>
-nnoremap <C-S-n> :Explore<CR>
-nnoremap <C-h> :split<CR>
-nnoremap <C-v> :vsplit<CR>
+"nnoremap <C-n> :edit.<CR>
+nnoremap <C-n> :Explore<CR>
+
+" Split windows
+noremap <C-y> :split<CR>
+noremap <C-t> :vsplit<CR>
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
