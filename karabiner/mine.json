@@ -300,7 +300,7 @@
           "type": "basic"
         }
       ]
-    }, 
+    },
 
     {
       "description": "External keyboard tilde (no deadkey)",
@@ -323,20 +323,35 @@
     },
 
     {
-      "description": "External keyboard alt+backquote",
+      "description": "Home button go to the beginning of the line",
       "manipulators": [
         {
           "from": {
-            "key_code": "grave_accent_and_tilde",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
+            "key_code": "home"
           },
           "to": [
             {
-              "key_code": "non_us_backslash",
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "End button go to the end of the line",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "end"
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
               "modifiers": [
                 "left_command"
               ]
